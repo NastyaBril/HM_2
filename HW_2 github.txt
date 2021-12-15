@@ -39,7 +39,7 @@ vim preferences.json
  14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON:
 touch skills.json
 vim skills.json
-{	"Skills": {"Postman",
+{	"Skills": ["Postman",
 		   "Git, GitHub, git Bash",
 		   "Terminal",
 		   "Android Studio",
@@ -47,7 +47,7 @@ vim skills.json
 		   "Jmeter",
 	           "Chrome DevTools",
 	           "Checklists",
-	           "Bug reports" }}
+	           "Bug reports."]}
  15. Отправить сразу 2 файла на внешний репозиторий:
 git add .
 git status
@@ -58,18 +58,19 @@ add file - добавить заголовок bug_report.json
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
 cнизу добавить commit - затем кнопка commit new file. 
  18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON:
-{	"Summary": "New project",
-	"section": "Purchase licenses",	
-	"project": "testing App "TestRail",
+{	"Summary": "New_project",
+	"section": "Purchase_licenses",	
+	"project": "testing_App_TestRail",
 	"status": "New",
 	"Step to Reproduce": [
 "1. Complete registration by link https://www.gurock.com/testrail/",
 "2. We pass to the section Purchase licenses",
-"3. Fill in the fields with a valid value". ]
+"3. Fill in the fields with a valid value."]
 	"result": [ "1. console error 404",
-		  "2. error in the element table" ]
-"Expected result": [ "Can not read property value underfined в HTMLTableE1ement.",
-		   "the server responded with a status of 404 (not found)" ] }
+		  "2. error in the element table." 
+"Expected result":  ["Can not read property value underfined в HTMLTableE1ement",
+		   "the server responded with a status of 404 (not found)."] 
+}
 
  19. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
 добавить commit - затем кнопка commit new file
