@@ -59,17 +59,17 @@ add file - добавить заголовок bug_report.json
 cнизу добавить commit - затем кнопка commit new file. 
  18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON:
 {	"Summary": "New project",
-	"раздел": "Purchase licenses",	
-	"project": "тестируем приложение TestRail",
+	"section": "Purchase licenses",	
+	"project": "testing App "TestRail",
 	"status": "New",
 	"Step to Reproduce": [
-"1. Проходим регистрацию по ссылке https://www.gurock.com/testrail/",
-"2. Проходим в раздел Purchase licenses",
-"3. Заполняем поля валидным значением". ]
-	"result": [ "1. консольная ошибка 404",
-		  "2. ошибка в таблице элемента" ]
-"Expected result": [ "Невозможно прочитать значение свойства underfined в HTMLTableE1ement.",
-		   "сервер ответил с состоянием 404 (не найдено)" ] }
+"1. Complete registration by link https://www.gurock.com/testrail/",
+"2. We pass to the section Purchase licenses",
+"3. Fill in the fields with a valid value". ]
+	"result": [ "1. console error 404",
+		  "2. error in the element table" ]
+"Expected result": [ "Can not read property value underfined в HTMLTableE1ement.",
+		   "the server responded with a status of 404 (not found)" ] }
 
  19. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
 добавить commit - затем кнопка commit new file
