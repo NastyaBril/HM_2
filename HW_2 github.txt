@@ -103,10 +103,12 @@ git status
 git push
  27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML:
 vim new_xml
-	<full name>Brilewskaya Anastasiya Valerewna</full name>
+      <personalinformation>
+	<fullname>Brilewskaya Anastasiya Valerewna</fullname>
 	<age>25</age>
-	<pets>1 cat<pets/>
-	<future salary>1 000 000 $</future salary>
+	<pets>1 cat</pets>
+	<futuresalary>1 000 000 $</future salary>
+      </personalinformation>
  28. Отправить изменения на внешний репозиторий:
 git status
 git commit -m "add information about yourself.xml"
@@ -114,23 +116,26 @@ git push
  29. Создать файл preferences.xml:
 touch preferences.xml
  30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML:
-        <film>1+1</film>
+      <preference>
+	<film>1+1</film>
 	<series>Chernaya lyubov</series>
-	<time of season>Summer</time of season>
+	<timeofseason>Summer</timeofseason>
 	<counry>Thai</country>
+      </preference>
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML:
 touch skills.json
 vim skills.xml
 	<Skills> 
-           Postman
-	   Git, GitHub, git Bash
-           Terminal
-	   Android Studio
-           Charles, Fiddler
-           Jmeter
-	   Chrome DevTools
-	   Checklists
-	   Bug reports</skills>
+           Postman,
+	   Git, GitHub, git Bash,
+           Terminal,
+	   Android Studio,
+           Charles, Fiddler,
+           Jmeter,
+	   Chrome DevTools,
+	   Checklists,
+	   Bug reports
+	 </skills>
  32. Сделать коммит в одну строку:
 git add preferences.xml skills.xml
 git status
@@ -143,13 +148,15 @@ add file - добавить заголовок bug_report.xml
  35. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
 cнизу добавить commit - затем кнопка commit new file
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML:
-<Summary>New project
-	section Purchase licenses</Summary>	
+<bugreport>
+        <Summary>New project</Summary>
+	<section>Purchase licenses</section>	
 	<project>testing App TestRail</project>
 	<status>New</status>
-	<Step to Reproduce>1. Complete registration by https://www.gurock.com/testrail/ 2. We pass to the section Purchase licenses 3. Fill in the fields with a valid value</step to Reproduce>
+	<SteptoReproduce>1.Complete registration by https://www.gurock.com/testrail/ 2. We pass to the section Purchase licenses 3. Fill in the fields with a valid value</steptoReproduce>
 	<result>1.console error 404 2. error in the element table</result>
-<Expected result>Can not read property value underfined в HTMLTableE1ement the server responded with a status of 404 (not found)</Expected result>
+        <Expectedresult>Can not read property value underfined в HTMLTableE1ement; the server responded with a status of 404 (not found)</Expectedresult>
+<bugreport>
 		   
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
 cнизу добавить commit - затем кнопка commit new file.
@@ -233,7 +240,7 @@ Summary: New project
 	result: 1. 1. console error 404
 		  2. error in the element table
 Expected result: Can not read property value underfined в HTMLTableE1ement.
-		   the server responded with a status of 404 (not found)
+		 the server responded with a status of 404 (not found)
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
 cнизу добавить commit - затем кнопка commit new file.
  18. Синхронизировать внешний и локальный репозиторий TXT:
