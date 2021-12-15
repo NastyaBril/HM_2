@@ -20,10 +20,10 @@ git status
 git push
  10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON:
 vim new_json
-{	"Full name": "Brilewskaya Anastasiya Valerewna"
+{	"Full name": "Brilewskaya_Anastasiya_Valerewna"
 	"Age": "25",
-	"Pets": "1 cat",
-	"Future salary": "1 000 000 $" }
+	"Pets": "1_cat",
+	"Future salary": "1000000_$" }
  11. Отправить изменения на внешний репозиторий:
 git status
 git commit -m "add information about yourself"
@@ -33,21 +33,21 @@ touch preferences.json
  13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON:
 vim preferences.json
 {	"Film": "1+1",
-	"Series": "Chernaya lyubov",
+	"Series": "Chernaya_lyubov",
 	"Time of season": "Summer",
 	"Counry": "Thai" }
  14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON:
 touch skills.json
 vim skills.json
 {	"Skills": ["Postman",
-		   "Git, GitHub, git Bash",
+		   "Git, GitHub, git_Bash",
 		   "Terminal",
-		   "Android Studio",
+		   "Android_Studio",
 		   "Charles, Fiddler",
 		   "Jmeter",
-	           "Chrome DevTools",
+	           "Chrome_DevTools",
 	           "Checklists",
-	           "Bug reports."]}
+	           "Bug_reports."]}
  15. Отправить сразу 2 файла на внешний репозиторий:
 git add .
 git status
@@ -144,12 +144,12 @@ add file - добавить заголовок bug_report.xml
 cнизу добавить commit - затем кнопка commit new file
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML:
 <Summary>New project
-	раздел Purchase licenses</Summary>	
-	<project>тестируем приложение TestRail</project>
+	section Purchase licenses</Summary>	
+	<project>testing App TestRail</project>
 	<status>New</status>
-	<Step to Reproduce>1. Проходим регистрацию по ссылке https://www.gurock.com/testrail/ 2. Проходим в раздел Purchase licenses 3. Заполняем поля валидным значением</step to Reproduce>
-	<result>1.консольная ошибка 404 2. ошибка в таблице элемента</result>
-<Expected result>Невозможно прочитать значение свойства underfined в HTMLTableE1ement сервер ответил с состоянием 404 (не найдено)</Expected result>
+	<Step to Reproduce>1. Complete registration by https://www.gurock.com/testrail/ 2. We pass to the section Purchase licenses 3. Fill in the fields with a valid value</step to Reproduce>
+	<result>1.console error 404 2. error in the element table</result>
+<Expected result>Can not read property value underfined в HTMLTableE1ement the server responded with a status of 404 (not found)</Expected result>
 		   
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
 cнизу добавить commit - затем кнопка commit new file.
@@ -224,16 +224,16 @@ cнизу добавить commit - затем кнопка commit new file.
  16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT:
 Summary: New project
 	раздел Purchase licenses	
-	project: тестируем приложение TestRail
+	project: testing_App_TestRail
 	status: New
 	Step to Reproduce: 
-1. Проходим регистрацию по ссылке https://www.gurock.com/testrail/
-2. Проходим в раздел Purchase licenses
-3. Заполняем поля валидным значением
-	result: 1. консольная ошибка 404
-		  2. ошибка в таблице элемента
-Expected result: Невозможно прочитать значение свойства underfined в HTMLTableE1ement.
-		   сервер ответил с состоянием 404 (не найдено)
+1. Complete registration by link https://www.gurock.com/testrail/
+2. We pass to the section Purchase licenses
+3. Fill in the fields with a valid value
+	result: 1. 1. console error 404
+		  2. error in the element table
+Expected result: Can not read property value underfined в HTMLTableE1ement.
+		   the server responded with a status of 404 (not found)
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
 cнизу добавить commit - затем кнопка commit new file.
  18. Синхронизировать внешний и локальный репозиторий TXT:
